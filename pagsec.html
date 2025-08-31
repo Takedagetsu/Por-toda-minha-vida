@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Por Toda Minha Vida</title>
+
+  <!-- ===== CSS PRINCIPAL ===== -->
+  <link rel="stylesheet" href="./src/CSS/estilopagsec.css">
+  <link rel="stylesheet" href="./src/CSS/responsivo.css">
+
+  <!-- ===== ÍCONES (Font Awesome) ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== CONTAINER PRINCIPAL ===== -->
+  <main class="layout-container">
+
+    <!-- ===== COLUNA ESQUERDA: CARROSSEL DE IMAGENS ===== -->
+    <aside class="left-panel">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <img src="./src/Iamgens/foto 1.jpeg" alt="Capa 1" class="album-cover-carousel">
+          <img src="./src/Iamgens/foto 2.jpeg" alt="Capa 2" class="album-cover-carousel">
+          <img src="./src/Iamgens/foto 3.jpeg" alt="Capa 3" class="album-cover-carousel">
+          <img src="./src/Iamgens/foto 4.jpeg" alt="Capa 4" class="album-cover-carousel">
+          <img src="./src/Iamgens/foto 5.jpeg" alt="Capa 5" class="album-cover-carousel">
+          <img src="./src/Iamgens/foto 6.jpeg" alt="Capa 6" class="album-cover-carousel">
+          <img src="./src/Iamgens/foto 7.jpeg" alt="Capa 7" class="album-cover-carousel">
+          <img src="./src/Iamgens/foto 8.jpeg" alt="Capa 8" class="album-cover-carousel">
+          <!-- Repita imagens se desejar efeito contínuo -->
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===== COLUNA CENTRAL: TEXTO + NAVEGAÇÃO ===== -->
+    <section class="text-container">
+      <!-- Texto em estilo máquina de escrever -->
+      <div class="marquee">
+        <span id="typing-text">VOU TE AMAR POR TODA MINHA VIDA.</span>
+        <span class="blinking-cursor">|</span>
+      </div>
+
+      <!-- Conteúdo de textos múltiplos -->
+      <div class="text-content">
+        <p id="main-text">Este é o primeiro texto exibido.</p>
+      </div>
+
+      <!-- Botões para navegar entre textos -->
+      <div class="text-controls">
+        <button id="prev-text">⬅ Voltar</button>
+        <button id="next-text">Próximo ➡</button>
+      </div>
+    </section>
+
+    <!-- ===== COLUNA DIREITA: PLAYER DE MÚSICA ===== -->
+    <aside class="right-panel">
+      <div class="music-player">
+        
+        <!-- Áudio -->
+        <audio id="audio-player">
+          <source src="./src/music/impossible.mp3" type="audio/mpeg">
+          Seu navegador não suporta áudio HTML5.
+        </audio>
+
+        <!-- Informações da música -->
+        <div class="song-info">
+          <div class="title-container">
+            <span id="music-title">Impossible</span>
+          </div>
+          <div class="artist-container">
+            <span id="music-artist">James Arthur</span>
+          </div>
+        </div>
+
+        <!-- Barra de progresso -->
+        <div class="progress-bar">
+          <input type="range" id="progress-bar" value="0" max="100">
+          <div class="time-display">
+            <span id="current-time">0:00</span>
+            <span id="total-time">0:00</span>
+          </div>
+        </div>
+
+        <!-- Controles do player -->
+        <div class="controls">
+          <button id="previous-track-btn"><i class="fas fa-backward"></i></button>
+          <button id="play-pause-btn"><i class="fas fa-play"></i></button>
+          <button id="next-track-btn"><i class="fas fa-forward"></i></button>
+        </div>
+
+        <!-- Capa da música -->
+        <img id="player-cover" src="./src/Iamgens/Frieren.jpg" alt="Capa da Música Atual" class="player-cover">
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- ===== FUNDO ANIMADO + BOLHAS ===== -->
+  <div class="background-container"></div>
+  <div class="cursor-effect"></div>
+  <div class="background-bubbles">
+    <!-- Bolhas geradas pelo JS -->
+  </div>
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="./src/JS/scripitpagsec.js"></script>
+
+</body>
+</html>

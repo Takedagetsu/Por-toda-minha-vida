@@ -1,0 +1,7 @@
+
+/* Responsividade */
+@media(max-width:900px){
+  .layout-container { grid-template-columns:1fr; grid-template-rows:auto auto auto; text-align:center; }
+  .music-player { max-width:100%; }
+  .text-container { font-size:1.2rem; }
+}

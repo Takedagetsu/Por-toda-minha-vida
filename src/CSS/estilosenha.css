@@ -1,0 +1,47 @@
+body {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Cor do texto branco */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222; /* Fundo do container cinza escuro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff; /* Cor do botão azul */
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Escurece o botão ao passar o mouse */
+}
