@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: #000; /* Fundo preto */
 }
 
@@ -292,3 +292,4 @@ body {
         font-size: 1.8em;
     }
 }
+
